@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/baseAlert" android:background="#aa000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="#fff1efe1" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="골프치러가자" android:layout_centerVertical="true" />
+            <RatingBar android:id="@id/rbMy" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="14.0dip" android:max="5" android:indeterminateOnly="false" android:progressDrawable="@drawable/ratingbar_heart" android:rating="5.0" android:stepSize="1.0" android:isIndicator="true" android:layout_toRightOf="@id/tvName" android:layout_centerVertical="true" />
+            <Button android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/btnCall" android:background="@drawable/s_btn_gray" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:text="010-1234-1234" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fff1efe1" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_score_average" android:paddingTop="2.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textColor="#ff333333" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="평균평점" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/txtTotalScore" android:background="@drawable/heart_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/txtTotalCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0명" android:singleLine="true" />
+        </LinearLayout>
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:stretchColumns="1" android:shrinkColumns="1">
+            <TableRow android:gravity="center_vertical" android:id="@id/baseScore5">
+                <RatingBar android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="14.0dip" android:max="5" android:indeterminateOnly="false" android:progressDrawable="@drawable/ratingbar_heart" android:rating="5.0" android:stepSize="1.0" android:isIndicator="true" />
+                <SeekBar android:id="@id/seekBar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="4.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/seekbar" android:thumb="@drawable/ic_score_bar" android:thumbOffset="0.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="right" android:id="@id/txtCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+            </TableRow>
+            <TableRow android:gravity="center_vertical" android:id="@id/baseScore4">
+                <RatingBar android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="14.0dip" android:max="5" android:indeterminateOnly="false" android:progressDrawable="@drawable/ratingbar_heart" android:rating="4.0" android:stepSize="1.0" android:isIndicator="true" />
+                <SeekBar android:id="@id/seekBar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="4.0dip" android:max="100" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/seekbar" android:thumb="@drawable/ic_score_bar" android:thumbOffset="0.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="right" android:id="@id/txtCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+            </TableRow>
+            <TableRow android:gravity="center_vertical" android:id="@id/baseScore3">
+                <RatingBar android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="14.0dip" android:max="5" android:indeterminateOnly="false" android:progressDrawable="@drawable/ratingbar_heart" android:rating="3.0" android:stepSize="1.0" android:isIndicator="true" />
+                <SeekBar android:id="@id/seekBar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="4.0dip" android:max="100" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/seekbar" android:thumb="@drawable/ic_score_bar" android:thumbOffset="0.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="right" android:id="@id/txtCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+            </TableRow>
+            <TableRow android:gravity="center_vertical" android:id="@id/baseScore2">
+                <RatingBar android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="14.0dip" android:max="5" android:indeterminateOnly="false" android:progressDrawable="@drawable/ratingbar_heart" android:rating="2.0" android:stepSize="1.0" android:isIndicator="true" />
+                <SeekBar android:id="@id/seekBar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="4.0dip" android:max="100" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/seekbar" android:thumb="@drawable/ic_score_bar" android:thumbOffset="0.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="right" android:id="@id/txtCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+            </TableRow>
+            <TableRow android:gravity="center_vertical" android:id="@id/baseScore1">
+                <RatingBar android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="14.0dip" android:max="5" android:indeterminateOnly="false" android:progressDrawable="@drawable/ratingbar_heart" android:rating="1.0" android:stepSize="1.0" android:isIndicator="true" />
+                <SeekBar android:id="@id/seekBar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="4.0dip" android:max="100" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/seekbar" android:thumb="@drawable/ic_score_bar" android:thumbOffset="0.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="right" android:id="@id/txtCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#fff1efe1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/input" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_margin="10.0dip">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                <RatingBar android:gravity="center" android:id="@id/ratingBar" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="26.0dip" android:max="5" android:progressDrawable="@drawable/ratingbar_heart2" android:rating="5.0" android:stepSize="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip">
+                <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btnOK" android:background="@drawable/s_btn_gray" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="26.0dip" android:text="등록" />
+                <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btnCancle" android:background="@drawable/s_btn_gray" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" android:text="취소" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

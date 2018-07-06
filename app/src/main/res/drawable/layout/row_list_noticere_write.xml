@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/s_bg_main_rounding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llWrite" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="54.0dip" android:weightSum="8.0">
+        <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/etC" android:background="@null" android:paddingLeft="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="댓글을 남겨주세요." android:layout_weight="6.5" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtSend" android:background="#ffb0ad9a" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="보내기" android:layout_weight="1.5" />
+    </LinearLayout>
+    <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

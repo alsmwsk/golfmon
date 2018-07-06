@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="color_window">#fff1efe1</item>
+    <item type="drawable" name="color_empty">#00ffffff</item>
+    <item type="drawable" name="color_white">#ffffffff</item>
+    <item type="drawable" name="bg_main_tablist_item">#00ffffff</item>
+    <item type="drawable" name="bg_main_rounding_over">#ffcdc69e</item>
+    <item type="drawable" name="bg_main_rounding">#fff1efe1</item>
+    <item type="drawable" name="bg_main_rounding_top">#fffdef9f</item>
+    <item type="drawable" name="bg_main_item_over">#ffcfb433</item>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:appg="http://schemas.android.com/apk/res/com.appg.golfmon">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/txtNickName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/txtID" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="#ffe8e4cd" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:stretchColumns="1" android:shrinkColumns="1">
+            <TableRow android:baselineAligned="false">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="지역" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txtLocation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+                    <com.appg.golfmon.view.GSpinner android:id="@id/spinnerLocation" android:background="@drawable/s_select" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" appg:textSize="13" appg:textColor="#ff333333" appg:textColorHint="#ffcdc69e" appg:hint="지역을 선택해 주세요" />
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_marginTop="10.0dip" android:baselineAligned="false">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="골프장" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txtGolf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+                    <com.appg.golfmon.view.GSpinner android:gravity="fill" android:id="@id/spinnerGolf" android:background="@drawable/s_select" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" appg:textSize="13" appg:textColor="#ff333333" appg:textColorHint="#ffcdc69e" appg:hint="골프장을 선택해 주세요" />
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_marginTop="10.0dip" android:baselineAligned="false">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="날짜" />
+                <Button android:textSize="13.0sp" android:textColor="#ff333333" android:textColorHint="#ffcdc69e" android:gravity="center|left" android:id="@id/btnDate" android:background="@drawable/input" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:hint="날짜를 선택해 주세요" />
+            </TableRow>
+            <TableRow android:layout_marginTop="10.0dip" android:baselineAligned="false">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="티업시간" />
+                <Button android:textSize="13.0sp" android:textColor="#ff333333" android:textColorHint="#ffcdc69e" android:gravity="center|left" android:id="@id/btnTime" android:background="@drawable/input" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:hint="시간을 선택해 주세요" />
+            </TableRow>
+            <TableRow android:layout_marginTop="10.0dip" android:baselineAligned="false">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="그린피" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:baselineAligned="false">
+                    <EditText android:textSize="13.0sp" android:textColor="#ff333333" android:textColorHint="#ffcdc69e" android:gravity="center|left" android:id="@id/edtFee" android:background="@drawable/input" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:hint="금액" android:singleLine="true" android:maxLength="10" android:layout_weight="1.0" android:inputType="numberDecimal" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="만원" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_marginTop="1.0dip">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="wrap_content" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" ※ 그린피 숫자와 점(.)만 입력가능합니다." />
+            </TableRow>
+            <TableRow android:id="@id/baseHole" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="홀선택" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:baselineAligned="false" android:layout_span="2">
+                    <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/btn18H" android:background="#00000000" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="18홀" android:drawableLeft="@drawable/s_rdo" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/btn27H" android:background="#00000000" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="27홀" android:drawableLeft="@drawable/s_rdo" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/btn36H" android:background="#00000000" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="4.0dip" android:text="36홀" android:drawableLeft="@drawable/s_rdo" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:id="@id/basePeople1" android:visibility="gone" android:layout_marginTop="10.0dip" android:baselineAligned="false">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="요청인원" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:baselineAligned="false">
+                    <EditText android:textSize="13.0sp" android:textColor="#ff333333" android:textColorHint="#ffcdc69e" android:gravity="center|left" android:id="@id/edtPeople" android:background="@drawable/input" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:hint="인원수" android:singleLine="true" android:inputType="number" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="명" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:id="@id/basePeople2" android:visibility="gone" android:layout_marginTop="4.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:baselineAligned="false" android:layout_span="2">
+                    <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/btnNone" android:background="#00000000" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="무관" android:drawableLeft="@drawable/s_rdo" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/btnCouple" android:background="#00000000" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="부부/커플" android:drawableLeft="@drawable/s_rdo" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/btnMan" android:background="#00000000" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="4.0dip" android:text="남자" android:drawableLeft="@drawable/s_rdo" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/btnWoman" android:background="#00000000" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="여자" android:drawableLeft="@drawable/s_rdo" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <View android:background="#ffe8e4cd" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+        <EditText android:textSize="13.0sp" android:textColor="#ff333333" android:textColorHint="#ffcdc69e" android:gravity="center|left|top" android:id="@id/edtDescription" android:background="@drawable/input" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:minHeight="115.0dip" android:hint="내용을 입력해 주세요." android:maxLength="200" />
+        <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnSubmit" android:background="@drawable/s_btn" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="등록하기" android:singleLine="true" />
+        <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnNaverSubmit" android:background="@drawable/s_btn" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:text="네이버카페에 등록하기" android:singleLine="true" />
+    </LinearLayout>
+</ScrollView>

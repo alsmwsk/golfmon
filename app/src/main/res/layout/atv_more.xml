@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/base_01" android:background="@drawable/s_bg_main_rounding" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/menu_more_1" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="공지사항" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffe8e4cd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:id="@id/base_02" android:background="@drawable/s_bg_main_rounding" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/menu_more_2" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="도움말" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffe8e4cd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:id="@id/base_03" android:background="@drawable/s_bg_main_rounding" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/menu_more_3" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="부킹매니저\n등록신청" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffe8e4cd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:id="@id/base_04" android:background="@drawable/s_bg_main_rounding" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/menu_more_4" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="골프몬에게\n바라는 점" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="#ffe8e4cd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/base_05" android:background="@drawable/s_bg_main_rounding" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/menu_more_5" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="My page" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffe8e4cd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:id="@id/base_06" android:background="@drawable/s_bg_main_rounding" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/menu_more_6" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="내가 등록한\n양도/조인" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffe8e4cd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:id="@id/base_07" android:background="@drawable/s_bg_main_rounding" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/menu_more_7" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="내가 요청한\n양도/조인" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffe8e4cd" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ffe8e4cd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="45.0dip" android:paddingBottom="45.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="골프몬 고객센터" />
+                <Button android:textSize="20.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btnCall" android:background="@drawable/s_btn_more_call" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1544-1544" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffe8e4cd" android:layout_width="fill_parent" android:layout_height="130.0dip">
+                <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="골프몬을 친구에게 추천하기" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                    <ImageButton android:id="@id/btnFacebook" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/s_btn_facebook" />
+                    <ImageButton android:id="@id/btnKakao" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/s_btn_katalk" />
+                    <ImageButton android:id="@id/btnTwitter" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/s_btn_tweet" />
+                    <ImageButton android:id="@id/btnSms" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/s_btn_sms" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.appg.golfmon.view.TabMain android:id="@id/tabMain" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

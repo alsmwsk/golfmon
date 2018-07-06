@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appg.golfmon" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="com.appg.golfmon.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.appg.golfmon.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.appg.golfmon.GMApp" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.appg.golfmon.atv.AtvIntro" android:screenOrientation="portrait" android:theme="@style/AppThemeIntro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:name="com.appg.crop.AtvCropImage" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.appg.golfmon.atv.AtvMapSelect" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.AtvMapShow" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.AtvShowPhoto" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.user.AtvUserLogin" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.user.AtvUserJoin" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.user.AtvUserFindPwd" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.AtvMain" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvListEmer" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvListCouple" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvListAll" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvListLocation" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvRegist" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvDetail" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvReviewAll" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvReviewWrite" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.event.AtvEvent" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.event.AtvEventDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.schedule.AtvListShop" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvMore" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvNotice" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvNoticeDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvFAQ" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvSuggest" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvMyPage" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvUserChange" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvMyRegist" android:screenOrientation="portrait"/>
+        <activity android:name="com.appg.golfmon.atv.more.AtvMyJoin" android:screenOrientation="portrait"/>
+        <receiver android:name="com.appg.golfmon.gcm.C2DMBroadCastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.appg.golfmon"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.appg.golfmon.gcm.C2DMIntentService"/>
+        <activity android:name="com.appg.golfmon.gcm.C2DMActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.appg.golfmon.start.StartActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="golfmon"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="OAuth2.0 In-app" android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"/>
+        <receiver android:name="com.appg.golfmon.start.StartReceiver">
+            <intent-filter>
+                <action android:name="com.appg.golfmon.ACTION_START"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCMiVWqBOSJptkLSbN-rWmzRO6jyBcc-jw"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key"/>
+    </application>
+</manifest>

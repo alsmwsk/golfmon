@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip">
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/btn2" android:background="@drawable/event_btn_serch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="경기\n북부" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/btn3" android:background="@drawable/event_btn_serch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="경기\n남부" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/btn4" android:background="@drawable/event_btn_serch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="충청" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/btn5" android:background="@drawable/event_btn_serch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="강원" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/btn6" android:background="@drawable/event_btn_serch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="호남" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/btn7" android:background="@drawable/event_btn_serch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="영남" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/btn8" android:background="@drawable/event_btn_serch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="제주" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.appg.golfmon.view.GListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/baseNodata" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:baselineAligned="false">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_nodata" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffaaaaaa" android:id="@id/txtNodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/img_nodata" android:text="검색결과가 없습니다." />
+    </LinearLayout>
+    <com.appg.golfmon.view.TabMain android:id="@id/tabMain" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

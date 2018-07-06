@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="#ffe8e4cd" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/ivThum" android:background="@drawable/event_thumbnail_default" android:layout_width="70.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="3.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="bottom" android:id="@id/txtName" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="" android:maxLines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff333333" android:gravity="top" android:id="@id/txtAdd" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="8.0sp" android:textColor="#ff333333" android:id="@id/txtInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="홀" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="#ffe8e4cd" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip" android:weightSum="16.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="11.0">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff333333" android:gravity="top" android:id="@id/txtDate" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="10.0sp" android:textColor="#ff333333" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="32.5dip" android:text="주중" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff333333" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="32.5dip" android:text="주말" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="4.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff3e76e6" android:gravity="center|right" android:id="@id/txtPayWeekDay" android:layout_width="wrap_content" android:layout_height="32.5dip" android:text="" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffe12124" android:gravity="center|right" android:id="@id/txtPayWeekEnd" android:layout_width="wrap_content" android:layout_height="32.5dip" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnCall" android:background="@drawable/s_btn" android:paddingLeft="20.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:text="예약전화하기" android:drawableLeft="@drawable/event_ic_call" android:layout_weight="1.0" />
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnSMS" android:background="@drawable/s_btn" android:paddingLeft="20.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:text="문자문의하기" android:drawableLeft="@drawable/event_ic_sms" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:autoLink="phone|web" android:id="@id/txtContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+        <com.appg.golfmon.view.GImageView android:id="@id/img1" android:background="@drawable/noimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <com.appg.golfmon.view.GImageView android:id="@id/img2" android:background="@drawable/noimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <com.appg.golfmon.view.GImageView android:id="@id/img3" android:background="@drawable/noimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llUtil" android:background="#ffe8e4cd" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="이 할인부킹 내용을" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip">
+                <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnKakao" android:background="@drawable/s_btn" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="친구에게 보내기" android:drawableLeft="@drawable/setting_icon_kakao" android:layout_weight="1.0" />
+                <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnCopy" android:background="@drawable/s_btn" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="내용복사하기" android:drawableLeft="@drawable/icon_clipboard" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

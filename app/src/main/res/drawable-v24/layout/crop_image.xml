@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/BtnBase" android:background="#ffcccccc" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="적용" android:layout_weight="0.5" />
+        <Button android:id="@id/btn_rotate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="회전" android:layout_weight="0.5" />
+        <Button android:id="@id/btn_cancle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="취소" android:layout_weight="0.5" />
+    </LinearLayout>
+    <com.appg.crop.CropImage android:id="@id/CropView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/BtnBase" />
+</RelativeLayout>

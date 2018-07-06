@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/item_detail_score" />
+    <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="#ffe8e4cd" android:paddingLeft="15.0dip" android:paddingTop="9.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btnWriteRounding" android:background="@drawable/s_btn" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="라운딩 후기 작성" android:drawableLeft="@drawable/ic_review" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <com.appg.golfmon.view.GListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

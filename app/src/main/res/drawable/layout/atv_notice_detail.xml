@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="#ffe8e4cd" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip" android:weightSum="16.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:gravity="top" android:id="@id/txtDate" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:autoLink="phone|web" android:id="@id/txtContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+        <com.appg.golfmon.view.GImageView android:id="@id/img1" android:background="@drawable/noimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <com.appg.golfmon.view.GImageView android:id="@id/img2" android:background="@drawable/noimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <com.appg.golfmon.view.GImageView android:id="@id/img3" android:background="@drawable/noimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llUtil" android:background="#ffe8e4cd" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="이 할인부킹 내용을" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip">
+                <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnKakao" android:background="@drawable/s_btn" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="친구에게 보내기" android:drawableLeft="@drawable/setting_icon_kakao" android:layout_weight="1.0" />
+                <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnCopy" android:background="@drawable/s_btn" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="내용복사하기" android:drawableLeft="@drawable/icon_clipboard" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/llWrite" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="64.0dip" android:weightSum="8.0">
+                <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/etC" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="댓글을 남겨주세요." android:layout_weight="6.0" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtSend" android:background="#ffb0ad9a" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="보내기" android:layout_weight="2.0" />
+            </LinearLayout>
+            <View android:background="#ffdad5b7" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <RelativeLayout android:orientation="horizontal" android:background="#ffe8e4cd" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <ImageView android:id="@id/ivC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/balloon" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:id="@id/txtC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="95" android:layout_toRightOf="@id/ivC" android:layout_centerVertical="true" />
+                <ImageButton android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/check" android:layout_toLeftOf="@id/txtOld" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/txtOld" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="등록순" android:layout_toLeftOf="@id/txtNew" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/txtNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text=" 최신순" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

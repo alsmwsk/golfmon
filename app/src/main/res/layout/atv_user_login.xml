@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/img_login_foot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/txtVer" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="v1.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="200.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="60.0dip" android:layout_marginRight="60.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_login_logo" />
+            <EditText android:textSize="14.0sp" android:textColor="#ff333333" android:textColorHint="#ffcdc69e" android:id="@id/edtId" android:background="@drawable/input" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="38.0dip" android:hint="ID(전화번호)" android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="11" android:inputType="number" />
+            <EditText android:textSize="14.0sp" android:textColor="#ff333333" android:textColorHint="#ffcdc69e" android:id="@id/edtPwd" android:background="@drawable/input" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="10.0dip" android:hint="비밀번호" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textPassword" />
+            <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/btnLogin" android:background="@drawable/s_btn" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:text="로그인" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="35.0dip">
+                <Button android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/btnJoin" android:background="@drawable/s_btn_gray" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:text="회원가입" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/btnFindPwd" android:background="@drawable/s_btn_gray" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:text="비밀번호 찾기" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
