@@ -35,6 +35,7 @@ import ra.genius.net.http.handler.IHttpHandler;
 public class AtvIntro
   extends Activity
 {
+  // 할수있다..
   private static final int CALL_COUNT_MAX = 3;
   protected static final int REQ_SETTING_NETWORK = 1123;
   private int CALL_COUNT_CURREN = 0;
@@ -482,8 +483,12 @@ public class AtvIntro
   }
 }
 
-
-/* Location:           C:\Users\TGKIM\Downloads\작업폴더\리버싱\androidReversetools\jd-gui-0.3.6.windows\com.appg.golfmon-1-dex2jar.jar
- * Qualified Name:     com.appg.golfmon.atv.AtvIntro
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\TGKIM\Downloads\작업폴더\리버싱\androidReversetools\jd-gui-0.3.6.windows\com.appg.golfmon-1-dex2jar.jar
+
+ * Qualified Name:     com.appg.golfmon.atv.AtvIntro
+
+ * JD-Core Version:    0.7.0.1
+
  */
